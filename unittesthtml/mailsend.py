@@ -20,9 +20,9 @@ mail["Subject"]=sub_str
 body = MIMEText(body_content_tmp,'html','utf-8')
 mail.attach(body)
 
-mail["From"]="yangjun03@baidu.com"
-mail["To"]="yangjun03@baidu.com"
-smtp=smtplib.SMTP("mail2-in.baidu.com")
+mail["From"]="XXX"
+mail["To"]="XXX"
+smtp=smtplib.SMTP("XXX")
 smtp.sendmail(mail["From"], mail["To"].split(","), mail.as_string())
 smtp.quit()
 
